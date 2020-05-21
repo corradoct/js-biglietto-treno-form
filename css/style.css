@@ -1,0 +1,32 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;               /*DA CANCELLARE SE SI USA UN FRAMEWORK*/
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* REGOLE GENERALI */
+
+/* FINE REGOLE GENERALI */
+
+
+/* REGOLE HEADER */
+
+/* FINE REGOLE HEADER */
+
+/* REGOLE NAV */
+
+/* FINE REGOLE NAV */
+
+/* REGOLE MAIN */
+
+/* FINE REGOLE MAIN */
+
+/* REGOLE FOOTER */
+
+/* FINE REGOLE FOOTER */
+
+/* MEDIAQUERYS */
+
+/* FINE MEDIAQUERYS */
