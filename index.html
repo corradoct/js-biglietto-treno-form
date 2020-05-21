@@ -25,24 +25,24 @@
             <!-- Inizio anagrafica -->
             <div class="anagrafica">
               <label for="">Nome Cognome</label>
-              <input type="text" name="" value="" placeholder="Inserisci nome e cognome">
+              <input id="formNome" type="text" name="" value="" placeholder="Inserisci nome e cognome">
             </div>
             <!-- Fine anagrafica -->
 
             <!-- Inizio chilometri -->
             <div class="percorso">
               <label for="">Km da percorrere</label>
-              <input type="number" name="" value="" placeholder="Inserisci il numero dei chilometri">
+              <input id="formKm" type="number" name="" value="" placeholder="Inserisci il numero dei chilometri">
             </div>
             <!-- Fine chilometri -->
 
             <!-- Inizio età -->
             <div class="fasciaEta">
               <label for="">Fascia d'età</label>
-              <select class="" name="">
-                <option value="">Maggiorenne</option>
-                <option value="">Minorenne</option>
-                <option value="">Over 65</option>
+              <select id="formEta" class="" name="">
+                <option value="Intero">Maggiorenne</option>
+                <option value="Minorenni">Minorenne</option>
+                <option value="Anziani">Over 65</option>
               </select>
             </div>
             <!-- Fine età -->
@@ -51,8 +51,8 @@
 
           <!-- Inizio contenitore dei button -->
           <div class="generaAnnulla">
-            <button type="button" name="button">Genera</button>
-            <button type="button" name="button">Annulla</button>
+            <button id="formGenera" type="button" name="button">Genera</button>
+            <button id="formAnnulla" type="button" name="button">Annulla</button>
           </div>
           <!-- Fine contenitore dei button -->
         </div>
@@ -76,35 +76,35 @@
             <!-- Inizio nome passeggero -->
             <div class="nomePasseggero">
               <h3>nome passeggero</h3>
-              <span>Alessandro</span>
+              <span id="biglNome"></span>
             </div>
             <!-- Fine nome passeggero -->
 
             <!-- Inizio offerta -->
             <div class="offerta">
               <h4>offerta</h4>
-              <span>Sconto silver</span>
+              <span id="biglOfferta"></span>
             </div>
             <!-- Fine offerta -->
 
             <!-- Inizio carrozza -->
             <div class="carrozza">
               <h4>carrozza</h4>
-              <span>3</span>
+              <span id="biglCarrozza"></span>
             </div>
             <!-- Fine carrozza -->
 
             <!-- Inizio codice cp -->
             <div class="codiceCp">
               <h4>codice cp</h4>
-              <span>97903</span>
+              <span id="biglCodiceCp"></span>
             </div>
             <!-- Fine codice cp -->
 
             <!-- Inizio costo biglietto -->
             <div class="costoBiglietto">
               <h4>costo biglietto</h4>
-              <span>4.03 €</span>
+              <span id="biglCostoBiglietto"></span>
             </div>
             <!-- Fine costo biglietto -->
           </div>
