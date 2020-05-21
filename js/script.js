@@ -11,10 +11,14 @@ var biglOfferta = document.getElementById('biglOfferta');
 var biglCarrozza = document.getElementById('biglCarrozza');
 var biglCodiceCp = document.getElementById('biglCodiceCp');
 var biglCostoBiglietto = document.getElementById('biglCostoBiglietto');
+var biglietto = document.getElementById('biglietto');
 
 // Eventi al click di genera
 buttonGenera.addEventListener('click',
   function () {
+    // Comparsa del biglietto
+    biglietto.className = biglietto.classList + ' visible';
+
     // Compilazione nome biglietto
     biglNome.innerHTML = formNome.value;
     biglNome.className = 'bold';
@@ -29,10 +33,16 @@ buttonGenera.addEventListener('click',
     biglCodiceCp.innerHTML = Math.floor(Math.random() * 100000) + 1;
 
     // Compilazione costo biglietto
-    var prezzoIntero = formKm.value * 0.21;
+    var prezzoIntero = (formKm.value * 0.21).toFixed(2);
+
     if (formEta.value == 'Minorenni') {
       var prezzoMinorenni = (prezzoIntero - (prezzoIntero * 20 / 100)).toFixed(2);
       biglCostoBiglietto.innerHTML = prezzoMinorenni + ' €';
+    } else if (formEta.value == 'Anziani') {
+      var prezzoAnziani = (prezzoIntero - (prezzoIntero * 40 / 100)).toFixed(2);
+      biglCostoBiglietto.innerHTML = prezzoAnziani + ' €';
+    } else {
+      biglCostoBiglietto.innerHTML = prezzoIntero + ' €';
     }
   }
 );
@@ -40,6 +50,8 @@ buttonGenera.addEventListener('click',
 // Eventi al click di annulla
 buttonAnnulla.addEventListener('click',
   function () {
+    // Scomparsa del biglietto
+    biglietto.className = 'dettagliBiglietto hidden';
     // Cancellazione nome
     formNome.value = '';
     biglNome.innerHTML = '';

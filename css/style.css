@@ -43,6 +43,14 @@ h4 {
 .bold {
   font-weight: bold;
 }
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
 /* Inizio regole section calcola prezzo */
 .wrapperForm {
   display: flex;
