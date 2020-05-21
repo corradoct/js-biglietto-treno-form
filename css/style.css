@@ -7,26 +7,106 @@
 /* FINE RESET */
 
 /* REGOLE GENERALI */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #b91450;
+  text-align: center;
+  padding-top: 50px;
+}
 
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  text-transform: capitalize;
+}
 /* FINE REGOLE GENERALI */
 
+/* REGOLE SECTION */
+.form,
+.dettagliBiglietto {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+/* Inizio regole section calcola prezzo */
+.wrapperForm {
+  display: flex;
+  justify-content: center;
+}
 
-/* REGOLE HEADER */
+.wrapperForm label {
+  padding-bottom: 15px;
+  color: #b91450;
+}
 
-/* FINE REGOLE HEADER */
+.wrapperForm input,
+.wrapperForm select {
+  border-color: #b91450;
+  border-radius: 5px;
+  padding: 3px;
+}
 
-/* REGOLE NAV */
+.generaAnnulla button {
+  color: #b91450;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-/* FINE REGOLE NAV */
+.anagrafica,
+.percorso,
+.fasciaEta {
+  padding: 0 20px;
+}
 
-/* REGOLE MAIN */
+.generaAnnulla {
+  padding-top: 30px;
+}
 
-/* FINE REGOLE MAIN */
+.wrapperForm label {
+  display: block;
+}
+/* Fine regole section calcola prezzo */
 
-/* REGOLE FOOTER */
+/* Inizio regole sezione biglietto */
+.dettagliBiglietto {
+  text-align: left;
+}
 
-/* FINE REGOLE FOOTER */
+.wrapperDettagliBiglietto {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
 
-/* MEDIAQUERYS */
+.nomePasseggero {
+  background-color: #808080;
+}
 
-/* FINE MEDIAQUERYS */
+.nomePasseggero,
+.offerta,
+.carrozza,
+.codiceCp,
+.costoBiglietto {
+  padding: 15px;
+}
+
+.wrapperDettagliBiglietto h4 {
+  padding-bottom: 30px;
+}
+/* Fine regole sezione biglietto */
+
+/* FINE REGOLE SECTION */
